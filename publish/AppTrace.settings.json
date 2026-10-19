@@ -1,0 +1,16 @@
+{
+  "Program": "",
+  "Args": "",
+  "CaptureFolder": "",
+  "LogImages": true,
+  "LogReadWrite": true,
+  "LogCloseCleanup": true,
+  "DeElevate": false,
+  "OpenFolder": "D:\\traces",
+  "CompareA": "D:\\traces\\psp-A8_MAX-20261019-131548\\trace.jsonl",
+  "CompareB": "D:\\traces\\psp-HP-LAPTOP-20261019-131721\\trace.jsonl",
+  "KeepGuids": false,
+  "WindowWidth": 1280,
+  "WindowHeight": 760,
+  "Maximized": false
+}

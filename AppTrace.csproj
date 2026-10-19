@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Authors>Dr Peet Morris (pm@cslab.com)</Authors>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <UseWindowsForms>true</UseWindowsForms>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
+        <AssemblyName>AppTrace</AssemblyName>
+        <RootNamespace>AppTrace</RootNamespace>
+
+    </PropertyGroup>
+
+    <ItemGroup>
+
+        <PackageReference Include="Microsoft.Diagnostics.Tracing.TraceEvent" Version="3.1.30" />
+
+    </ItemGroup>
+
+    <ItemGroup>
+
+        <!-- Carried inside AppTrace.exe and unpacked at run time (see NativeSupport.cs) -->
+        <EmbeddedResource Include="$(NuGetPackageRoot)microsoft.diagnostics.tracing.traceevent\3.1.30\build\native\amd64\KernelTraceControl.dll"
+                          LogicalName="KernelTraceControl.dll" />
+
+    </ItemGroup>
+
+</Project>

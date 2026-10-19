@@ -1,0 +1,6 @@
+<Project>
+
+    <!-- Intentionally empty: build output (bin, obj, publish) now stays inside the project folder.
+         This file can be deleted. -->
+
+</Project>
